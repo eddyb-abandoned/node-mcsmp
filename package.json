@@ -1,16 +1,17 @@
 {
-  "author": "Eduard Burtescu <eddyb@kwhq.net> (kwhq.net)",
+  "author": "Eduard Burtescu <edy.burt@gmail.com> (http://kwhq.net)",
   "name": "mcsmp",
   "description": "Minecraft multiplayer library",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "homepage": "http://github.com/eddyb/node-mcsmp",
   "repository": {
     "type": "git",
     "url": "git://github.com/eddyb/node-mcsmp.git"
   },
+  "main": "index.js",
   "engines": {
-    "node": "~0.4.12"
+    "node": "~0.5.9"
   },
   "dependencies": {},
-  "devDependencies": {},
-  "main": "index"
+  "devDependencies": {}
 }
