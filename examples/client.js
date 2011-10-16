@@ -40,7 +40,7 @@ if(process.argv.length < 4) {
     process.exit();
 }
 
-var client = new mc.clientSocket(), server = process.argv[2], username = process.argv[3];
+var client = new mc.ClientSocket(), server = process.argv[2], username = process.argv[3];
 
 client.on('error', function(e) {
     //client.emit('close');
@@ -64,4 +64,3 @@ readPassword(function(password) {
         password = undefined;
     client.connect(server, username, password, 17);
 });
-
