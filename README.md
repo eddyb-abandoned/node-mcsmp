@@ -6,6 +6,6 @@ node-mcsmp - Simple Minecraft multiplayer protocol library for node.js.
 
 # USAGE
 
-Install with `npm install mcsmp` (not usable right now).
+Install with `npm install mcsmp`.
 
-Checkout the `examples` for detalied usage.
+Checkout the `examples` directory for detalied usage.

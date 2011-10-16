@@ -12,6 +12,8 @@
   "engines": {
     "node": "~0.5.9"
   },
-  "dependencies": {},
+  "dependencies": {
+    "deflate": "~1.0.3"
+  },
   "devDependencies": {}
 }
