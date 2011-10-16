@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 
 var mc = require('../'), packets = mc.protocol.packets;
 
