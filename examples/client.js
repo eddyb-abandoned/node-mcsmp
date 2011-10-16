@@ -62,5 +62,5 @@ console.log('Please enter your password (leave blank for no authentication):');
 readPassword(function(password) {
     if(!password)
         password = undefined;
-    client.connect(server, username, password, 17);
+    client.connect(server, username, password);
 });
