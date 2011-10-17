@@ -3,7 +3,7 @@
   "name": "mcsmp",
   "description": "Minecraft multiplayer library",
   "version": "0.0.1",
-  "homepage": "http://github.com/eddyb/node-mcsmp",
+  "homepage": "https://github.com/eddyb/node-mcsmp",
   "repository": {
     "type": "git",
     "url": "git://github.com/eddyb/node-mcsmp.git"
