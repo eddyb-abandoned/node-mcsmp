@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-var mc = require('../'), packets = mc.protocol.packets;
+var mc = require('../');
+var packets = mc.protocol.packets;
 
-var server = mc.createServer(function(c) {
-    c.on('login', function(u) {
+var server = mc.createServer(c => {
+    c.on('login', u => {
         console.log(u+' just logged in');
         c.write(packets.LOGIN, {playerEID: server.lastEID++, height: 128, maxPlayers: 100});
         c.write(packets.CHAT, {message: 'Hi '+u+' and welcome to a demo server of node-mcsmp :).'});
@@ -11,10 +12,10 @@ var server = mc.createServer(function(c) {
         c.write(packets.BLOCK_CHANGE, {x: 0, y: 63, z: 0, blockType: 1});
         c.write(packets.PLAYER_POS, {x: 0, y: 64, stance: 65.7, z: 0});
     });
-    c.on('close', function(m) {
+    c.on('close', m => {
         console.log(c.username+' just logged out ('+m+')');
     });
-    c.on('error', function(e) {
+    c.on('error', e => {
         c.write(packets.DISCONNECT, {message:e});
         console.log(c.username+' just logged out ('+e+')');
     });
